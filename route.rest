@@ -1,0 +1,29 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/651607457e99912953d5c940
+
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "A. Music Lover",
+    "subscribedToChannel": "Maestronomy"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/651607457e99912953d5c940
+
+###
+
+PATCH http://localhost:3000/subscribers/65160e217c8be3bfa1f5f87b
+Content-Type: application/json
+
+{
+    "subscribedToChannel": "Maestronomy"
+}
